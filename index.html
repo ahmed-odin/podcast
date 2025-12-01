@@ -178,25 +178,26 @@
           <h1 class="font-bold text-3xl dark:text-amber-50">Latest Podcasts</h1>
         </div>
         <div class="flex justify-end items-end gap-4 pr-[20%]  ">
-          <button
+
+          <button  onclick="toggletap('maindiv')"
             class="cursor-pointer pl-4 pr-4 bg-amber-40 border border-gray-150 rounded-4xl text-blue-500 border-gray-300 bg-gray-150 dark:text-amber-50
             dark:border-violet-800"
           >
             All
           </button>
-          <button
+          <button  onclick="toggletap('indiestories')"
             class="cursor-pointer pl-4 pr-4 bg-amber-40 border border-gray-150 rounded-4xl text-black-500 border-gray-300 bg-gray-150 dark:text-amber-50 
             dark:border-violet-800 "
           >
             indie stories
           </button>
-          <button
+          <button  onclick="toggletap('Software')"
             class="cursor-pointer pl-4 pr-4 bg-amber-40 border border-gray-150 rounded-4xl text-black-500 border-gray-300 bg-gray-150 dark:text-amber-50
             dark:border-violet-800"
           >
             Softwear social
           </button>
-          <button
+          <button  onclick="toggletap('Interviews')"
             class="cursor-pointer pl-4 pr-4 bg-amber-40 border border-gray-150 rounded-4xl text-black-500 border-gray-300 bg-gray-150 dark:text-amber-50
             dark:border-violet-800"
           >
@@ -206,8 +207,10 @@
       </div>
       <!-- list nav bar -->
        <div>
-      <div class="w-fit justify-center ml-10 dark:text-amber-50">
-        <div class="flex flex-row">
+        <div id="maindiv">
+          <div id="indiestories">
+      <div   class= "  w-fit justify-center ml-10 dark:text-amber-50">
+        <div  class="flex flex-row">
           <div class="mb-5 w-24 h-24 ml-24 mt-12">
             <img class="rounded-[5px]" src="/src/images/mice.jpg" alt="" />
           </div>
@@ -242,8 +245,8 @@
         </div>
         <hr class="border-t border-black ml-15 w-[1200px] opacity-5 mt-3" />
       </div>
-
-      <div class="w-fit justify-center ml-10 dark:text-amber-50">
+      
+      <div  class=" indiestories w-fit  justify-center ml-10 dark:text-amber-50">
         <div class="flex flex-row">
           <div class="mb-5 w-24 h-24 ml-24 mt-12">
             <img class="rounded-[5px]" src="/src/images/pink-.jpg" alt="" />
@@ -281,45 +284,11 @@
         </div>
         <hr class="border-t border-black ml-15 w-[1200px] opacity-5 mt-3" />
       </div>
-      <div class="w-[1300px] justify-center ml-10 dark:text-amber-50 ">
-        <div class="flex flex-row">
-          <div class="mb-5 w-24 h-24 ml-24 mt-12">
-            <img class="rounded-[5px]" src="/src/images/skyscraber.jpg" alt="" />
-          </div>
-          <div class="flex flex-col ml-5 gap-1">
-            <h4 class="mt-12 font-bold cursor-pointer hover:text-blue-400 transition">
-              Bootstrapping DevKit to $4.5k MRR
-            </h4>
-            <div class="flex flex-row gap-1">
-              <a class="text-blue-400 hover:underline" href="">Interviews  </a>
-              <p class="pl-1 opacity-70  ">
-                Jan 24 Episode 234
-              </p>
-            </div>
-            <div class="opacity-70">
-              <p>
-                In today's show, we're excited to have Mike chats with Indie Dev
-                Benedicte Ruiz about getting into public speaking. Mike was the
-                CEO of<br />
-                Panoramic X, a pioneer web development studio.
-              </p>
-
-             
-            </div>
-          </div>
-          <div class="">
-            <a href="http://localhost:5174/index3">
-            <img
-              class="cursor-pointer w-10 h-10 mt-18 ml-10"
-              src="https://preview.cruip.com/podcast/images/play-02.svg"
-              alt=""
-            />
-            </a>
-          </div>
-        </div>
-        <hr class="border-t border-black ml-15 w-[1200px] opacity-5 mt-3" />
       </div>
-      <div class="w-[1300px] justify-center ml-10">
+      
+      
+      <div id="Software">
+      <div  class=" Software w-[1300px] justify-center ml-10">
         <div class="flex flex-row">
           <div class="mb-5 w-24 h-24 ml-24 mt-12">
             <img class="rounded-[5px]" src="/src/images/undersky.jpg" alt="" />
@@ -357,7 +326,7 @@
         </div>
         <hr class="border-t border-black ml-15 w-[1200px] opacity-5 mt-3" />
       </div>
-      <div class="w-[1300px] justify-center ml-10">
+      <div  class="w-[1300px] justify-center ml-10">
         <div class="flex flex-row">
           <div class="mb-5 w-24 h-24 ml-24 mt-12">
             <img class="rounded-[5px]" src="/src/images/wash.jpg" alt="" />
@@ -391,9 +360,49 @@
             </a>
           </div>
         </div>
+        </div>
         <hr class="border-t border-black ml-15 w-[1200px] opacity-5 mt-3" />
       </div>
-      <div class="w-[1300px] justify-center ml-10">
+      <div id="Interviews">
+        <div  class=" Interviews w-[1300px] justify-center ml-10 dark:text-amber-50 ">
+        <div class="flex flex-row">
+          <div class="mb-5 w-24 h-24 ml-24 mt-12">
+            <img class="rounded-[5px]" src="/src/images/skyscraber.jpg" alt="" />
+          </div>
+          <div class="flex flex-col ml-5 gap-1">
+            <h4 class="mt-12 font-bold cursor-pointer hover:text-blue-400 transition">
+              Bootstrapping DevKit to $4.5k MRR
+            </h4>
+            <div class="flex flex-row gap-1">
+              <a class="text-blue-400 hover:underline" href="">Interviews  </a>
+              <p class="pl-1 opacity-70  ">
+                Jan 24 Episode 234
+              </p>
+            </div>
+            <div class="opacity-70">
+              <p>
+                In today's show, we're excited to have Mike chats with Indie Dev
+                Benedicte Ruiz about getting into public speaking. Mike was the
+                CEO of<br />
+                Panoramic X, a pioneer web development studio.
+              </p>
+
+             
+            </div>
+          </div>
+          <div class="">
+            <a href="http://localhost:5174/index3">
+            <img
+              class="cursor-pointer w-10 h-10 mt-18 ml-10"
+              src="https://preview.cruip.com/podcast/images/play-02.svg"
+              alt=""
+            />
+            </a>
+          </div>
+        </div>
+        <hr class="border-t border-black ml-15 w-[1200px] opacity-5 mt-3" />
+      </div>
+      <div  class=" Interviews w-[1300px] justify-center ml-10">
         <div class="flex flex-row">
           <div class="mb-5 w-24 h-24 ml-24 mt-12">
             <img class="rounded-[5px]" src="/src/images/lineman.jpg" alt="" />
@@ -429,7 +438,7 @@
         </div>
         <hr class="border-t border-black ml-15 w-[1200px] opacity-5 mt-3" />
       </div>
-      <div class="w-[1300px] justify-center ml-10">
+      <div  class="w-[1300px] justify-center ml-10">
         <div class="flex flex-row">
           <div class="mb-5 w-24 h-24 ml-24 mt-12">
             <img class="rounded-[5px]" src="/src/images/pipe.jpg" alt="" />
@@ -466,6 +475,8 @@
         <hr class="border-t border-black ml-15 w-[1200px] opacity-5 mt-3" />
       </div>
       </div>
+      </div>
+  </div>
   </div>
       <!-- hosts section -->
       <div class="w-[90%] h-fit bg-[#1E293B]  rounded-4xl mt-18 flex m-auto text-gray-400 dark:bg-gray-700">
